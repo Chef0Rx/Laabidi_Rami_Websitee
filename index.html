@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laabidi Rami | Personal Chess Website</title>
+<meta name="description" content="Official website of Laabidi Rami, Tunisian chess player, FIDE ID 5550955, Rapid and Blitz ratings, and national tournament participation.">
+<style>
+  :root {
+    --bg-light: #ffffff;
+    --bg-dark: #121212;
+    --text-light: #000000;
+    --text-dark: #ffffff;
+    --primary-color: #ff5e62;
+    --secondary-color: #ff9966;
+    --accent-color: #ffeb3b;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  body.light {
+    background: var(--bg-light);
+    color: var(--text-light);
+  }
+
+  body.dark {
+    background: var(--bg-dark);
+    color: var(--text-dark);
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    color: white;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  nav a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  .toggle-btn {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+
+  section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    border-bottom: 3px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p, li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    position: relative;
+  }
+
+  .hero img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-top: 1rem;
+  }
+
+  .chess-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tournament-card {
+    background: linear-gradient(135deg, #42e695, #3bb2b8);
+    color: white;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .tournament-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+
+  .contact-section {
+    text-align: center;
+    background: linear-gradient(135deg, #ff5e62, #ff9966);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+  }
+
+  .chess-links a, .contact a {
+    display: inline-block;
+    margin: 0.5rem 1rem 0.5rem 0;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: transform 0.2s;
+  }
+
+  .chess-links a:hover, .contact a:hover {
+    transform: scale(1.1);
+  }
+</style>
+</head>
+<body class="light">
+<header>
+  <h1>Laabidi Rami</h1>
+  <div>
+    <button class="toggle-btn" onclick="toggleTheme()">Toggle Dark/Light</button>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#chess">Chess</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Laabidi Rami</h1>
+  <p>Tunisian Chess Player</p>
+  <img src="https://via.placeholder.com/150" alt="Laabidi Rami Photo">
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hello! I am <strong>Laabidi Rami</strong>, born in 2006 in Tunisia. I play chess regularly in national and online tournaments. I enjoy learning from every game and improving step by step in different time controls.</p>
+</section>
+
+<section id="chess" class="chess-section">
+  <h2>Chess Profile & Achievements</h2>
+
+  <div class="tournament-card">
+    <strong>FIDE ID:</strong> 5550955<br>
+    <strong>Rapid Rating:</strong> 1905<br>
+    <strong>Blitz Rating:</strong> 1661<br>
+    <strong>Standard Rating:</strong> Not yet rated
+  </div>
+
+  <div class="tournament-card">
+    <strong>U20 National Championship:</strong> 60+30, Dec 2025
+  </div>
+
+  <div class="tournament-card">
+    <strong>Other Youth Tournaments:</strong> U18, U20 in Tunisia
+  </div>
+
+  <div class="tournament-card">
+    <strong>Online Chess:</strong> Active on Chess.com as Laabidi_Rami
+  </div>
+
+  <div class="chess-links">
+    <a href="https://ratings.fide.com/profile/5550955" target="_blank">FIDE Profile</a>
+    <a href="https://www.chess.com/member/Laabidi_Rami" target="_blank">Chess.com Profile</a>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <h2>Contact Me</h2>
+  <p>You can find me on social media:</p>
+  <div class="contact">
+    <a href="https://www.instagram.com/icon_ramy" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com/Icon.Ramy" target="_blank">Facebook</a>
+  </div>
+</section>
+
+<script>
+function toggleTheme() {
+  document.body.classList.toggle('dark');
+  document.body.classList.toggle('light');
+}
+</script>
+</body>
+</html>
